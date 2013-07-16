@@ -268,7 +268,7 @@ function CaseListCtrl($scope, AngularForce, $location, Case) {
             $scope.$apply();//Required coz sfdc uses jquery.ajax
         }, function (data) {
             alert('Query Error');
-        }, 'Select Id, CaseNumber, Contact, Subject, Status From Case Order By CaseNumber Limit 50');
+        }, 'Select Id, CaseNumber, Contact.Name, Subject, Status From Case Order By CaseNumber Limit 50');
 }
 
 
