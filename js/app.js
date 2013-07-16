@@ -41,7 +41,7 @@ angular.module('Account', []).factory('Account', function (AngularForceObjectFac
 });
 
 angular.module('Case', []).factory('Case', function (AngularForceObjectFactory) {
-    var Case = AngularForceObjectFactory({type: 'Case'});
+    var Case = AngularForceObjectFactory({type: 'Case', fields: ['Id', 'CaseNumber', 'Contact.Name', 'Subject', 'Status'], where: '', limit: 50});
     return Case;
 });
 
