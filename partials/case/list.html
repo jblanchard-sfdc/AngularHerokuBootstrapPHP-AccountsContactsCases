@@ -11,7 +11,7 @@
     <tr ng-repeat="current in cases">
         <td class='hidden-phone'>{{current.Id}}</td>
         <td><a href="#/view/{{current.Id}}">{{current.CaseNumber}}</a></td>
-        <td>{{current.Contact}}</td>
+        <td>{{current.Contact.Name}}</td>
     </tr>
     </tbody>
 </table>
